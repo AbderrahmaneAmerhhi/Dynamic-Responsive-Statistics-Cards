@@ -13,35 +13,11 @@
 import BaseCard from "./BaseCard.vue";
 export default {
   mounted() {
-    this.addIcons();
     this.CounterAnimation();
   },
   props: ["data"],
   name: "cards",
   methods: {
-    // add icon to stat cards
-    addIcons() {
-      if (this.data) {
-        for (var i = 0; i < this.data.length; i++) {
-          document.querySelectorAll(".card-icon").forEach((ele, index) => {
-            if (i === index) {
-              if (this.data[i].icon !== undefined) {
-                this.data[i].icon
-                  .split(" ")
-                  .forEach((l) => ele.classList.toggle(l));
-              } else {
-                // add card default icon
-                var defaultClass = "bx bx-stats";
-                defaultClass.split(" ").forEach((l) => ele.classList.toggle(l));
-              }
-            }
-          });
-          // console.log(i)
-        }
-      }
-      // document.querySelectorAll('.card-icon').forEach((l,i) =>{ console.log(i)});
-      // console.log(document.querySelectorAll('.card-icon'));
-    },
     // stat cards Counte up animation
     CounterAnimation() {
       const counters = document.querySelectorAll(".counter");
@@ -78,16 +54,6 @@ export default {
   background-color: #232d65;
 }
 
-.card-icon {
-  width: 60px;
-  height: 60px;
-  display: grid;
-  text-align: center;
-  align-items: center;
-  background-color: #929dd9;
-  color: #232d65;
-  border-radius: 50%;
-}
 .cadr:hover::before {
   background-color: #929dd9;
 }

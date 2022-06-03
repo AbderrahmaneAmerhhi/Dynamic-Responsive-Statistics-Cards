@@ -31,6 +31,10 @@ export default {
           number: 230,
           icon: "fa-solid fa-baby",
         },
+        {
+          title: "d4",
+          number: 230,
+        },
       ],
     };
   },

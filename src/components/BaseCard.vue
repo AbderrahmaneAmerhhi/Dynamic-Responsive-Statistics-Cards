@@ -8,7 +8,7 @@
         {{ number }}
       </p>
     </div>
-    <i class="fs-1 border p3 card-icon"></i>
+    <i :class="`fs-1 border p3 card-icon ${icon ? icon : 'bx bx-stats'}`"></i>
   </div>
 </template>
 
@@ -23,4 +23,15 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.card-icon {
+  width: 60px;
+  height: 60px;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  background-color: #929dd9;
+  color: #232d65;
+  border-radius: 50%;
+}
+</style>
