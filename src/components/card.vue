@@ -42,7 +42,15 @@ export default {
                 for(var i =0;i< this.data.length;i++){
                     document.querySelectorAll('.card-icon').forEach((ele,index) =>{
                        if(i === index ){
-                           if(this.data[i].icon !== undefined){
+                          ele.classList.remove('bx')
+                             ele.classList.remove('bx-stats')
+                             if(ele.classList.length > 4){
+                                // remove the Previous  class for adding a new class icon
+                                for(var n=0;n<ele.classList.length;n++){
+                                    ele.classList.remove(''+ele.classList[n+4]+'')
+                                }
+                             }
+                           if(this.data[i].icon){
                                this.data[i].icon.split(' ').forEach(l => ele.classList.toggle(l))
 
                            }else{

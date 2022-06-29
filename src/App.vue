@@ -13,24 +13,24 @@ export default {
     return {
         cardsdata:[
             {
-                title:'d1',
+                title:'card1',
                 number:290,
                 icon:'bx bxs-playlist',
             },
             {
-                title:'d2',
+                title:'card2',
                 number:2600,
                 icon:'bx bxs-ev-station',
             },
            {
                 title:'d3',
-                number:250,
-                icon:'bx bxs-ev-station',
+                number:3500,
+                icon:'fa fa-edit',
             },
            {
                 title:'d4',
-                number:230,
-                icon:'fa-solid fa-baby',
+                number:2000,
+                icon:'fa-solid fa-trash',
             }
         ]
     }
