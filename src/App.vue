@@ -25,12 +25,15 @@ export default {
            {
                 title:'d3',
                 number:3500,
-                icon:'fa fa-edit',
+                icon: 'fa fa-edit',
+                iconId: 'cube',
             },
            {
                 title:'d4',
                 number:2000,
-                icon:'fa-solid fa-trash',
+                icon: 'fa-solid fa-trash',
+                iconId: 'cube',
+                cardclass:'FrCardclass'
             }
         ]
     }
@@ -49,5 +52,17 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+#cube{
+   background-color: #ffd4d4;
+   color: #ff7979;
+}
+#cube:hover{
+   background-color: #de6b6b;
+}
+
+.FrCardclass{
+   background: yellow;
 }
 </style>
