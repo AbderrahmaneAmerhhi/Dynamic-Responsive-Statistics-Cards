@@ -6,7 +6,9 @@
 
 <script>
 
-import card from './components/card.vue'
+// import card from './components/card.vue'
+import card from 'dynamic_cards_componenets';
+import 'dynamic_cards_componenets/dist/card-component.css'
 export default {
   name: 'App',
    data () {
@@ -45,14 +47,7 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 
 #cube{
    background-color: #ffd4d4;

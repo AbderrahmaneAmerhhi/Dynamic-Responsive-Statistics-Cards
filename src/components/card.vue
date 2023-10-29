@@ -36,7 +36,9 @@
 
 <script>
 
+import '../style/main.css'
 export default {
+    
   data () {
     return {
     }
@@ -149,64 +151,5 @@ export default {
         grid-template-columns: 1fr !important;
     }
 }; */
-
-.cards-container{
-    display: grid;
-    height: auto;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px;
-    column-gap: 5px;
-    row-gap: 5px;
-}
-.cadr{
-    width: auto;
-    background: #fff;
-    display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
-    padding: 15px;
-    box-shadow: 	0px 0px 11px 1px rgba(0,0,0,0.14);
-    border:	1px solid rgba(0,0,0,0);
-    border-radius:	4px;
-}
-.cadr .card-data{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-.card-icon{
-
-    width: 60px;
-    height: 60px;
-    display: grid;
-    text-align: center;
-    align-items: center;
-    /* background-color: #929DD9; */
-    color:  #232D65;
-    border-radius: 50%;
-    font-size: 32px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.cadr .card-title{
-    font-size: 12px;
-    font-weight: 500;
-    color: #828282;
-}
-
-.cadr:hover .card-icon{
-     cursor: pointer;
-}
-
-@media(max-width: 786px){
-    .cards-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-};
-@media(max-width: 441px){
-    .cards-container{
-        grid-template-columns: 1fr !important;
-    }
-};
 
 </style>
