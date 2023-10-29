@@ -1,6 +1,6 @@
 {
   "name": "dynamic_cards_componenets",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "private": false,
   "files": [
     "dist/*",
