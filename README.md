@@ -43,16 +43,16 @@ Install amtablevuecomponenet with npm
 
 Here we define the compoenent data
 
-cardsdata:
-[
-{
-// The first card
-title: "card1" // Card Title,
-number: 290, // The number that is displayed on the card,
-icon: "bx bxs-playlist" // Icon class : You can use any class icon from icons that you use in your project example fontawesome etc,
-},
-{
-// The second card
+        cardsdata:
+        [
+        {
+        // The first card
+        title: "card1" // Card Title,
+        number: 290, // The number that is displayed on the card,
+        icon: "bx bxs-playlist" // Icon class : You can use any class icon from icons that you use in your project example fontawesome etc,
+        },
+        {
+         // The second card
 
             title: "card2",
             number: 2600,
